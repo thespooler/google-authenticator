@@ -40,8 +40,8 @@
  *
  *****************************************************************************
 */
-#define _BSD_SOURCE
-#include <sys/types.h> // Defines BYTE_ORDER, iff _BSD_SOURCE is defined
+#define _DEFAULT_SOURCE
+#include <sys/types.h> // Defines BYTE_ORDER
 #include <string.h>
 
 #include "sha1.h"
