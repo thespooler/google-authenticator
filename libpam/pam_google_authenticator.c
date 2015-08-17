@@ -1233,7 +1233,7 @@ static int check_timebased_code(pam_handle_t *pamh, const char*secret_filename,
   }
 
   // Compute verification codes and compare them with user input
-  const int tm = get_timestamp(pamh, secret_filename, buf);
+  const int tm = get_timestamp(pamh, secret_filename, (const char **)buf);
   if (!tm) {
     return -1;
   }
